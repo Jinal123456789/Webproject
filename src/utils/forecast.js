@@ -16,14 +16,8 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        "city " +
-          body.location.name +
-          " country " +
-          body.location.country +
-          " region " +
-          body.location.region +
-          " " +
-          body.current.weather_descriptions +
+
+        body.current.weather_descriptions +
           ". Current temperature is " +
           body.current.temperature +
           " degree.  " +
